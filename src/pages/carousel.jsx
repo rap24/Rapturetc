@@ -50,10 +50,10 @@ const Carousel = () => {
     const place = formData.get('place');
     const number = formData.get('number');
     const appointmentDate = formData.get('appointmentDate');
-    const defaultHeading = 'Appointment Booking';
+    const defaultHeading = '*Appointment Booking*';
 
     // Format the message with the form data
-    const message = `${defaultHeading}%0A%0AName: ${name}\nPlace: ${place}\nContact Number: ${number}\nAppointment Date: ${appointmentDate}`;
+    const message = `${defaultHeading}\nName: ${name}\nPlace: ${place}\nContact Number: ${number}\nAppointment Date: ${appointmentDate}`;
     
     //WhatsApp URL with the message
     const whatsappURL = `https://wa.me/+917902709974?text=${encodeURIComponent(message)}`;
