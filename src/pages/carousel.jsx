@@ -50,7 +50,7 @@ const Carousel = () => {
     const place = formData.get('place');
     const number = formData.get('number');
     const appointmentDate = formData.get('appointmentDate');
-    const defaultHeading = '<b><u>Appointment Booking</u></b>';
+    const defaultHeading = 'Appointment Booking';
 
     // Format the message with the form data
     const message = `${defaultHeading}%0A%0AName: ${name}\nPlace: ${place}\nContact Number: ${number}\nAppointment Date: ${appointmentDate}`;
