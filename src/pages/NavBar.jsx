@@ -34,8 +34,8 @@ const NavBar = () => {
     // Check if all fields are filled
     const { name, place, contact, date } = formData;
     if (name && place && contact && date) {
-      const defaultHeading = 'Appointment Booking';
-      const message = `${defaultHeading}%0A%0AName: ${name}%0APlace: ${place}%0AContact Number: ${contact}%0AAppointment Date: ${date}`;
+      const defaultHeading = '*Appointment Booking*';
+      const message = `${defaultHeading}\nName: ${name}%0APlace: ${place}%0AContact Number: ${contact}%0AAppointment Date: ${date}`;
       window.open(`https://wa.me/+917902709974?text=${message}`);
       handleClose();
     } else {
