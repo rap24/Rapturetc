@@ -31,7 +31,7 @@
   @media (max-width: 900px) {
     .leftsidewhatocc-image {
         height: 70%;
-        width: 70%px;
+        width: 70%;
         display: none;
     }
     .rightsidewhatocc {
@@ -41,6 +41,9 @@
       .whatisot2 {
         font-size: 16px;
         margin-bottom: 10px;
+      }
+      .leftsidewhatocc img{
+        width: auto;
       }
     
   }
