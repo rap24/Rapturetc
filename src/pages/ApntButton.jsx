@@ -21,7 +21,7 @@ const ApntButton = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const defaultHeading = '<b><u>Appointment Booking</u></b>';
+    const defaultHeading = 'Appointment Booking';
     // Format the message with the form data
     const message = `${defaultHeading}%0A%0AName: ${formData.name}, Place: ${formData.place}, Contact Number: ${formData.number}, Appointment Date: ${formData.appointmentDate}`;
     // Construct the WhatsApp URL with the message
