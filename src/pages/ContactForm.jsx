@@ -21,8 +21,8 @@ const ContactForm = () => {
     e.preventDefault();
     const { name, contactNumber, message } = formData;
     if (name && contactNumber && message) {
-      const defaultHeading = '<b><u>Enquiry Form</u></b>';
-      const messageText = `${defaultHeading}%0A%0AName: ${name}%0AContact Number: ${contactNumber}%0AMessage: ${message}`;
+      const defaultHeading = '*Enquiry Form*';
+      const messageText = `${defaultHeading}\nName: ${name}%0AContact Number: ${contactNumber}%0AMessage: ${message}`;
       window.open(`https://wa.me/+917902709974?text=${messageText}`);
       setErrorMessage('');
       setFormData({ name: '', contactNumber: '', message: '' });
