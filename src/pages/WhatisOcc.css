@@ -25,6 +25,9 @@
     font-size: 26px;
     margin-bottom: 10px;
   }
+  .rightsidewhatocc img{
+        width: 400px;
+  }
 
 
 
@@ -43,7 +46,11 @@
         margin-bottom: 10px;
       }
       .leftsidewhatocc img{
-        width: auto;
+        display: none;
       }
+      .rightsidewhatocc img{
+        display: none;
+  }
+
     
   }
