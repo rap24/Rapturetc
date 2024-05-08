@@ -59,3 +59,9 @@
     background-color: #6c757d;
     border-color: #6c757d;
 }
+
+@media (max-width: 700px) {
+    .navbar-brand img {
+      max-height: 30px; /* Adjust the max height as needed */
+    }
+  }
