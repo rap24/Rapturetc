@@ -1,0 +1,39 @@
+.about-inner-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/s2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .about-inner-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color overlay */
+    z-index: 1; /* Push the overlay behind the content */
+  }
+  
+  .main-text-about {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative; /* Ensure text appears above the overlay */
+    z-index: 2; /* Ensure text appears above the overlay */
+  }
+  
+  .sub-text-about {
+    font-size: 1rem;
+    position: relative; /* Ensure text appears above the overlay */
+    z-index: 2; /* Ensure text appears above the overlay */
+  }
+  

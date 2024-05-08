@@ -1,0 +1,111 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Change to 100% for full screen */
+    margin: 0 auto;
+  }
+  
+  .slides-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure the carousel takes up the full height */
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure the slide takes up the full height */
+    display: none;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(98, 98, 98, 0), rgba(33, 33, 33, 0.5)), #3d878a;
+    opacity: 0.3; /* Adjust the opacity as needed */
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Navigation indicators */
+  .navigation-indicators {
+    position: absolute;
+    top: calc(100% + 10px); /* Position it below the image container */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #155d74;
+    width: 35px; /* Custom width for active indicator */
+    height: 10px;
+    border-radius: 12px;
+    transition: opacity 0.5s ease;
+  }
+   .carousel .button {
+         display: inline-block;
+         padding: 10px 20px;
+         margin-top: 20px;
+         background-color: #3d878a;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+       }
+      
+       .carousel .button:hover {
+         background-color: #ffffff;
+         color: rgb(0, 0, 0);
+       }
+  
+  @media (min-width: 900px) {
+    .slide {
+      height: 650px; /* Adjust the height as needed */
+    }
+    .maincarouseltitle h2{
+        font-size: 58px;
+    }
+    .caraouselappbutton {
+        display: none;
+    }
+    .carousel .button {
+        display: none;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .slide {
+      height: 400px; /* Adjust the height as needed */
+    }
+  }
+  

@@ -1,0 +1,61 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    background-color: white;
+}
+
+.PcBookAppointment {
+    background-color: #3d878a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .PcBookAppointment {
+        display: none;
+    }
+}
+
+/* Close button in modal */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Modal body styles */
+.modal-body {
+    padding: 20px;
+}
+
+/* Modal title styles */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-label {
+    font-weight: bold;
+}
+
+/* Submit button */
+.modal-footer .btn-primary {
+    background-color: #3d878a;
+   border: none;
+}
+
+/* Close button */
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}

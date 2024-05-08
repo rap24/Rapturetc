@@ -1,0 +1,46 @@
+
+.leftsidewhatocc {
+    padding: 20px;
+  }
+  
+  .rightsidewhatocc {
+    padding: 20px;
+  }
+  
+  .rightsidewhatocc p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .whatisot {
+    color: rgb(80, 80, 80);
+
+  }
+
+  .rightsidewhatocc {
+    padding-top: 1%;
+  }
+
+  .whatisot2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+
+
+  @media (max-width: 900px) {
+    .leftsidewhatocc-image {
+        height: 70%;
+        width: 70%px;
+        display: none;
+    }
+    .rightsidewhatocc {
+        padding-top: 0px;
+      }
+
+      .whatisot2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    
+  }
