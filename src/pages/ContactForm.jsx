@@ -21,11 +21,16 @@ const ContactForm = () => {
     e.preventDefault();
     const { name, contactNumber, message } = formData;
     if (name && contactNumber && message) {
-      const defaultHeading = '*Enquiry Form*';
-      const messageText = `${defaultHeading}\nName: ${name}%0AContact Number: ${contactNumber}%0AMessage: ${message}`;
-      window.open(`https://wa.me/+917902709974?text=${messageText}`);
-      setErrorMessage('');
-      setFormData({ name: '', contactNumber: '', message: '' });
+      emailjs.sendForm('service_25gjsgt', 'template_yn3brm2', e.target, 'j3n3vOUvkakrCaMdB')
+        .then((result) => {
+          console.log('Email sent successfully:', result.text);
+          alert('Email sent successfully!');
+          setErrorMessage('');
+          setFormData({ name: '', contactNumber: '', message: '' });
+        }, (error) => {
+          console.error('Error sending email:', error.text);
+          alert('Error sending email. Please try again later.');
+        });
     } else {
       setErrorMessage('All fields are required.');
     }
