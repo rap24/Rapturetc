@@ -28,7 +28,11 @@ const MeetandGreet = () => {
 {/*         </div> */}
         
       </div>
-     <div className="rightsidetreatment col">
+     
+  
+      </div>
+
+      <div className="rightsidetreatment col">
           <h3>Our Treatment:</h3>
           <ul>
             <li>Sensory integration / Sensory based treatment.</li>
@@ -47,8 +51,6 @@ const MeetandGreet = () => {
             <li>Environmental adaptations for home and school settings.</li>
           </ul>
         </div>
-  
-      </div>
     </div>
   );
 }
