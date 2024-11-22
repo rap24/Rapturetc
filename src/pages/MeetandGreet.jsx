@@ -39,10 +39,10 @@ const MeetandGreet = () => {
       <div className="row">
         <div className="leftsidetreatment col">
           <div className="image-container">
-            <img src="/monika.jpg" alt="Monika Presanan - Speech and Language Therapist" className='rounded' />
+            <img src="/Likitha.jpeg" alt="Monika Presanan - Speech and Language Therapist" className='rounded' />
             <div className="paragraph-box">
-              <h3>Monika Prasenan</h3>
-              <p>Speech and Language Therapist, Certified Oral Placement Therapy Level 1</p>
+              <h3>Likitha Somashekar</h3>
+              <p>Senior Speech Language Pathologist, Head of speech department</p>
             </div>
           </div>
         </div>
