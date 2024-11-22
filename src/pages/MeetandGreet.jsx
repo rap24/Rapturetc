@@ -16,7 +16,7 @@ const MeetandGreet = () => {
             </div>
           </div>
         </div>
-         <div className="row">
+{/*          <div className="row"> */}
         <div className="leftsidetreatment col">
           <div className="image-container">
             <img src="/Likitha.jpeg" alt="Monika Presanan - Speech and Language Therapist" className='rounded' />
@@ -25,7 +25,7 @@ const MeetandGreet = () => {
               <p>Senior Speech Language Pathologist, Head of speech department</p>
             </div>
           </div>
-        </div>
+{/*         </div> */}
         <div className="rightsidetreatment col">
           <h3>Our Treatment:</h3>
           <ul>
